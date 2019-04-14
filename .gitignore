@@ -1,0 +1,10 @@
+.DS_Store
+client/node_modules/
+client/dist/
+client/src/assets/video/
+client/npm-debug.log
+server/node_modules/
+server/capture/
+server/public/
+err.log
+out.log
