@@ -7,4 +7,4 @@
 >服务器挂在亚马逊云上
 
 ### 详情参考：
-![](https://github.com/xueenze/js-capture/blob/master/capture.gif)
+![](https://github.com/xueenze/capture/blob/master/capture.gif)
