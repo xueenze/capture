@@ -1,55 +1,84 @@
 <template>
-    <div class = "wrapper container-fluid">
+    <div class = "wrapper container-fluid rel">
         <client-header 
             :isShowHome = "true"
-            :isShowIntroduction = "false"
-            :isShowCharacter = "false"
-            :isShowVideolist = "false"
-            :isShowUserlist = "false"></client-header>
-        <div id = "home" class = "home-wrapper rel">
-            <p class = "abs">Pellentesque tempus ex sed aliquet elementum justo ipsumfeufiat tortor?</p>
-        </div>
-        <div id = "introduction" class = "introduction-wrapper rel">
-            <div class = "content abs">
-                <h1>INTRODUCTION</h1>
-                <p class = "detail">When I am at home, I often help my mother do some housework and my mother said I am a good helper, too. My mother is a barber.She cuts hair very well.She is kind.Many people like her. she often teaches me the way of learning well, if you want to learn English well, here is some of my advice. At first , you must read many articles and know many words, if you meet up with some new words, you can look them up in the dictionary,</p>
-                <p class = "detail">When I am at home, I often help my mother do some housework and my mother said I am a good helper, too. My mother is a barber.She cuts hair very well.She is kind.Many people like her. she often teaches me the way of learning well, if you want to learn English well, here is some of my advice. At first , you must read many articles and know many words, if you meet up with some new words, you can look them up in the dictionary,</p>
-                <p class = "detail">When I am at home, I often help my mother do some housework and my mother said I am a good helper, too. My mother is a barber.She cuts hair very well.She is kind.Many people like her. she often teaches me the way of learning well, if you want to learn English well, here is some of my advice. At first , you must read many articles and know many words, if you meet up with some new words, you can look them up in the dictionary,</p>
+            :isShowIntroduction = "true"
+            :isShowStory = "false"
+            :isShowRules = "false"
+            :isShowPlay = "false"></client-header>
+        <div id = "introduction" class = "introduction-wrapper normal">
+            <div class = "content">
+                <p class = "title">INTRODUCTION</p>
+                <p class = "detail" style = "color: rgba(198, 198, 198, 0.8);">
+                    The story of this game is adapted from a murder case which has <br>
+                    aroused a lot of discussions on social media during the last two years. There are still many doubts left in this case:
+                </p>
+                <p class = "detail" style = "color: rgba(198, 198, 198, 0.5);">
+                    Did the murder come to visit with the intention to murder?<br>
+                    Why did he kill the victim?<br>
+                    Did the survivor lock the door?<br>
+                    Are the survivor and her family cold-blooded?<br>
+                    Is the mother earning money through the death of her daughter?<br>
+                    What is the inner relationship between them?<br>
+                </p>
+                <p class = "detail" style = "color: rgba(198, 198, 198, 0.5);">
+                    Netizens separated into several different groups and quarrelled over this, some of them changed sides often.
+                </p>
             </div>
         </div>
-        <div id = "character" class = "character-wrapper rel">
-            <div class = "content abs">
-                <h1>CHARACTERS</h1>
-                <div class="media">
-                    <div class="media-left media-middle">
-                        <a href="#">
-                            <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNjlhNDVmMTY3ZiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2OWE0NWYxNjdmIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy40Njg3NSIgeT0iMzYuNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true" style="width: 100px; height: 100px;">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-left media-middle">
-                        <a href="#">
-                            <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNjlhNDVmMTY3ZiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2OWE0NWYxNjdmIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy40Njg3NSIgeT0iMzYuNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true" style="width: 100px; height: 100px;">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-left media-middle">
-                        <a href="#">
-                            <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNjlhNDVmMTY3ZiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2OWE0NWYxNjdmIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy40Njg3NSIgeT0iMzYuNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true" style="width: 100px; height: 100px;">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                    </div>
-                </div>
+        <div id = "story" class = "story-wrapper">
+            <div class = "content"></div>
+        </div>
+        <div id = "rules" class = "rules-wrapper normal">
+            <div class = "content">
+                <p class = "title">HOW TO PLAY?</p>
+                <p class = "desc">
+                    Your goal is to find out the fact and tell others.<br>
+                    Click the comments which you are interested in to watch the videos.<br> 
+                </p>
+                <p class = "desc">
+                    Use<i class = "right"></i>and<i class = "wrong"></i>to mark trustworthy statements and untrustworthy statements respectively.<br>
+                    Click<i class = "share"></i>to share and check your answer. <br>
+                </p>
+                <p class = "desc" style = "margin-bottom: 0;">Are you ready?</p>
+                <p class = "desc">
+                    <span style = "text-decoration: underline;cursor: pointer;" 
+                        @click = "goTo('play')">Yes!</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span style = "text-decoration: underline;">
+                        No, I want to read the introduction again
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class = "special abs">
+            <div>
+                <p>HOW CAN</p>
+                <p>WE</p>
+                <p>DISTINGUISH</p>
+                <p>RUMORS</p>
+                <p>FROM</p>
+                <p>FACTS?</p>
+            </div>
+            <div style = "margin-top: 170px;">
+                <p>WHO</p>
+                <p>IS</p>
+                <p>LYING?</p>
+            </div>
+        </div>
+        <div class = "special abs" style = "top: 195px;">
+            <div>
+                <p>HOW CAN</p>
+                <p>WE</p>
+                <p>DISTINGUISH</p>
+                <p>RUMORS</p>
+                <p>FROM</p>
+                <p>FACTS?</p>
+            </div>
+            <div style = "margin-top: 170px;">
+                <p>WHO</p>
+                <p>IS</p>
+                <p>LYING?</p>
             </div>
         </div>
     </div>
@@ -65,7 +94,18 @@ export default {
     },
     data() {
         return {
-
+        };
+    },
+    methods: {
+        /**
+         * 跳转
+         */
+        goTo(type) {
+          switch(type) {
+            case 'play':
+              this.$router.push({ path: '/videolist' });
+              break;
+          }
         }
     }
 }
@@ -73,83 +113,99 @@ export default {
 
 <style lang="less" scoped>
 .wrapper{
-    .home-wrapper{
-        background-image: url(../assets/images/home/home_bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: -webkit-fill-available;
-        height: -webkit-fill-available;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .special{
+        font-size: 255px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: rgba(175, 17, 29, 0.4);
+        top: 185px;
+        left: 130px;
+        filter: blur(10px);
 
         p{
-            color: #ffffff;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 50px;
-            font-weight: bold;
+            line-height: 310px;
         }
     }
-    .character-wrapper{
-        background-image: url(../assets/images/character/character_bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: -webkit-fill-available;
-        height: -webkit-fill-available;
 
-        .content{
-            color: #ffffff;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 50px;
-            font-weight: bold;
-            width: 75%;
-
-            h1{
-                text-align: center;
-                font-size: 50px;
-                margin-bottom: 30px;
-            }
-
-            .media{
-                margin-bottom: 30px;
-
-                .media-object{
-                    border-radius: 100%;
-                    margin-right: 20px;
-                }
-
-                p{
-                    font-size: 16px;
-                }
-            }
-        }
+    .normal{
+        height: 1080px;
+        padding-left: 845px;
+        display: flex;
+        flex-direction: column;
     }
+
     .introduction-wrapper{
-        background-image: url(../assets/images/introduction/introduction_bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: -webkit-fill-available;
-        height: -webkit-fill-available;
-
+        padding-top: 335px;
         .content{
-            color: #ffffff;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 50px;
-            font-weight: bold;
-            width: 75%;
-
-            h1{
-                text-align: center;
-                font-size: 50px;
-                margin-bottom: 30px;
+            .title{
+                color: rgba(198, 198, 198, 0.8);
+                font-size: 81px;
+                font-weight: bold;
+                margin-bottom: 45px;
             }
 
             .detail{
-                font-size: 16px;
-                margin-bottom: 30px;
+                margin-bottom: 45px;
+                line-height: 32px;
+                font-size: 21px;
+            }
+        }
+    }
+    .story-wrapper{
+        height: 1080px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 280px;
+        padding-top: 100px;
+        .content{
+            background-image: url(../assets/images/character/character_bg.png);
+            width: 1600px;
+            height: 930px;
+        }
+    }
+    .rules-wrapper{
+        padding-top: 315px;
+        .content{
+            .title{
+                color: rgba(198, 198, 198, 0.8);
+                font-size: 81px;
+                font-weight: bold;
+                margin-bottom: 45px;
+            }
+
+            .desc{
+                color: rgba(198, 198, 198, 0.8);
+                font-size: 21px;
+                font-weight: bold;
+                margin-bottom: 45px;
+                line-height: 32px;
+
+                i{
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    display: inline-block;
+                    vertical-align: text-top;
+                    margin: 0 5px;
+                }
+
+                .right{
+                    background-image: url(../assets/images/videolist/right.png);
+
+                }
+
+                .wrong{
+                    background-image: url(../assets/images/videolist/wrong.png);
+                }
+
+                .share{
+                    background-image: url(../assets/images/home/share.png);
+                    width: 25px;
+                    height: 25px;
+                }
             }
         }
     }
