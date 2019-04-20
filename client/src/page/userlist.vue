@@ -1,5 +1,5 @@
 <template>
-    <div class = "user-list-wrapper container-fluid">
+    <div class = "user-list-wrapper container-fluid" style = "width: 1950px;">
         <client-header 
             :isShowHome = "false"
             :isShowIntroduction = "false"

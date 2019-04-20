@@ -10,7 +10,7 @@
     <div id="videoList" class="video-list container-fluid">
       <div class="row" v-for="(rowItem, rowIndex) in videoListShow" :key="rowIndex">
         <div
-          class="col-md-3 video-item rel fadeIn animated"
+          class="col-md-3 video-item rel"
           v-for="(columnItem, columnIndex) in rowItem"
           :key="columnIndex"
         >
@@ -40,7 +40,7 @@
                 @click.stop = "videoClick(rowIndex, columnIndex, false)"></i>
               <i class = "right abs" v-show="columnItem.isShowRight"
                 @click.stop = "videoClick(rowIndex, columnIndex, true)"></i>
-              <i :class = "['result abs fadeIn animated', columnItem.operateResult ? 'result-right' : 'result-wrong']"
+              <i :class = "['result abs', columnItem.operateResult ? 'result-right' : 'result-wrong']"
                 v-show="columnItem.operateResult != -1"></i>
             </div>
           </div>
@@ -60,7 +60,7 @@
       <i class = "rotate-infinite"></i>
     </div>
     <!-- 截图确认层 -->
-    <div id="captureWrapper" class="modal fade">
+    <!-- <div id="captureWrapper" class="modal fade">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -73,7 +73,7 @@
             <div class="alert alert-info" role="alert" v-show="captureLoadingStatus == 0">截图上传中，请稍后...</div>
             <div class="alert alert-success" role="alert" v-show="captureLoadingStatus == 1">截图上传成功!</div>
             <div class="alert alert-danger" role="alert" v-show="captureLoadingStatus == 2">截图上传失败!</div>
-            <img :src="captureSrc" alt style="width: 100%;display:none;">
+            <img :src="captureSrc" alt style="width: 100%;">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" data-dismiss="modal" 
@@ -81,7 +81,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -194,7 +194,7 @@ export default {
                     this.isShowMask = false;
                     // 直接跳转至截图列表
                     this.goTo('videolist');
-                    // $('#captureWrapper').modal('show');
+                    $('#captureWrapper').modal('show');
                 });
             }, 0);
         },
