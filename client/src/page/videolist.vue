@@ -3,10 +3,9 @@
     <client-header
       :isShowHome="false"
       :isShowIntroduction="false"
-      :isShowCharacter="false"
-      :isShowVideolist="true"
-      :isShowUserlist="false"
-      @capture="capture"
+      :isShowStory="false"
+      :isShowRules="false"
+      :isShowPlay="true"
     ></client-header>
     <div id="videoList" class="video-list container-fluid">
       <div class="row" v-for="(rowItem, rowIndex) in videoListShow" :key="rowIndex">
@@ -47,6 +46,12 @@
           </div>
           <div class = "abs content-mask" v-show = "!columnItem.isClick"></div>
         </div>
+      </div>
+    </div>
+    <div class = "capture-icon fix" @click = "capture">
+      <div class = "rel">
+        <i class = "abs"></i>
+        <div class = "capture-icon-mask abs"></div>
       </div>
     </div>
     <canvas id="canvas" class="video-canvas"/>
@@ -187,7 +192,9 @@ export default {
                     this.captureSrc = canvas.toDataURL();
                     await this.submitCapture();
                     this.isShowMask = false;
-                    $('#captureWrapper').modal('show');
+                    // 直接跳转至截图列表
+                    this.goTo('videolist');
+                    // $('#captureWrapper').modal('show');
                 });
             }, 0);
         },
@@ -296,19 +303,45 @@ export default {
           i{
             background-image: url(../assets/images/videolist/loading.png);
             display: block;
-            width: 100px;
-            height: 100px;
+            width: 160px;
+            height: 160px;
             margin: 380px auto 0;
             background-size: cover;
           }
         }
 
+        .capture-icon{
+          height: 80px;
+          width: 80px;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+          i{
+            display: inline-block;
+            background-image: url(../assets/images/home/share.png);
+            width: 40px;
+            height: 40px;
+            background-size: contain;
+            top: 20px;
+            left: 20px;
+            box-shadow: inset 0 3px 20px 6px #000000;
+          }
+
+          &-mask{
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255,255,255,0.15);
+            z-index: 2;
+          }
+        }
+
         .video-list{
-            margin-top: 60px;
+            margin-top: 140px;
             background-color: #000000;
         
         .video-item{
-            margin: 30px;
+            margin: 15px;
             width: 442.5px;
             padding: 0;
 
@@ -324,26 +357,30 @@ export default {
                     transform: translate(-50%, -50%);
 
                     .cover-default{
-                      a{
-                        display: inline-block;
+                      .media-left{
+                        padding-right: 15px;
+                        a{
+                          display: inline-block;
                           img{
                               width: 150px;
                               height: 150px;
                           }
+                        }
                       }
 
                       .media-body{
                         .desc{
-                            top: 27.5px;
+                            top: 19px;
                             .title{
                               font-size: 18px;
-                              color: #888888;
+                              color: rgba(136, 136, 136, 1);
+                              margin-bottom: 20px;
                             }
 
                             .detail{
-                              font-size: 10.5px;
+                              font-size: 21px;
                               color: #c6c6c6;
-                              line-height: 20px;
+                              line-height: 25px;
                             }
                         }
                       }
@@ -370,12 +407,13 @@ export default {
 
                   .wrong{
                     background-image: url(../assets/images/videolist/wrong.png);
-                    width: 20px;
-                    height: 20px;
+                    width: 25px;
+                    height: 25px;
                     background-size: cover;
-                    left: 10px;
+                    left: 45px;
                     top: 50%;
                     transform: translateY(-50%);
+                    cursor: pointer;
 
                     &:hover{
                       background-image: url(../assets/images/videolist/wrong_cover.png);
@@ -384,12 +422,13 @@ export default {
 
                   .right{
                     background-image: url(../assets/images/videolist/right.png);
-                    width: 20px;
-                    height: 20px;
+                    width: 25px;
+                    height: 25px;
                     background-size: cover;
-                    right: 10px;
+                    right: 45px;
                     top: 50%;
                     transform: translateY(-50%);
+                    cursor: pointer;
 
                     &:hover{
                       background-image: url(../assets/images/videolist/right_cover.png);

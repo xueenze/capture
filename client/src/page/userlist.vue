@@ -3,15 +3,15 @@
         <client-header 
             :isShowHome = "false"
             :isShowIntroduction = "false"
-            :isShowCharacter = "false"
-            :isShowVideolist = "false"
-            :isShowUserlist = "true"></client-header>
+            :isShowStory = "false"
+            :isShowRules = "false"
+            :isShowPlay = "true"></client-header>
         <div class = "user-list container-fluid">
             <div class="row" 
                 v-for = "(rowItem, rowIndex) in userListShow" :key = "rowIndex">
                 <div class="col-md-3 user-item" 
                 v-for = "(columnItem, columnIndex) in rowItem" :key = "columnIndex" @click = "clickItem(rowIndex, columnIndex)">
-                    <div class = "content rel">
+                    <div class = "content">
                         <img class = "user-capture" 
                         :src = "columnItem.capturesrc" alt="">
                     </div>
@@ -23,17 +23,9 @@
         <div id="commentWrapper" class="modal fade">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h4 class="modal-title">截图内容</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img :src="currentUser.capturesrc" alt style="width: 100%;">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <div class="modal-body rel">
+                        <p class = "abs close-modal" @click = "closeModal">CLOSE</p>
+                        <img :src="currentUser.capturesrc" alt>
                     </div>
                 </div>
             </div>
@@ -102,6 +94,9 @@ export default {
             this.currentIndex = rowIndex * 4 + columnIndex;
             $('#commentWrapper').modal('show');
         },
+        closeModal() {
+            $('#commentWrapper').modal('hide');
+        },
         back() {
         }
     }
@@ -113,14 +108,15 @@ export default {
         background-color: #000000;
 
         .user-list{
-            margin-top: 60px;
+            margin-top: 140px;
 
             .user-item{
-                padding: 10px;
+                margin: 15px;
+                width: 443px;
+                height: 250px;
+                padding: 0;
 
                 .content{
-                    border: 1px solid #e6e6e6;
-                    border-radius: 2px;
                     height: 200px;
                     overflow: hidden;
 
@@ -131,20 +127,40 @@ export default {
 
                 .user-name{
                     text-align: center;
-                    margin: 5px auto;
-                    color: #a6a6a6;
-                }
-
-                &:hover{
-                    background-color: rgba(230, 230, 230, 0.1);
+                    margin: 10px auto;
+                    color: #C8C8C8;
+                    font-size: 18px;
                 }
             }
         }
 
-        .user-detail{
-            margin-top: 60px;
-            img{
-                width: 100%;
+        .modal{
+            background-color: rgba(0, 0, 0, 0.8);
+            top: 100px;
+            .modal-dialog{
+                width: 960px;
+                margin-top: 100px;
+
+                .modal-content{
+                    background-color: #000000;
+                    box-shadow: 0 1px 50px #ffffff;
+
+                    .close-modal{
+                        color: rgba(198, 198, 198, 0.5);
+                        top: 25px;
+                        right: 40px;
+                        font-size: 18px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+
+                    img{
+                        width: 100%;
+                        margin-top: 50px;
+                        border-top: 2px rgba(112, 112, 112, 0.5) solid;
+                    }
+                }
             }
         }
     }

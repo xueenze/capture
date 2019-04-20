@@ -36,7 +36,7 @@ export default {
             isShowHeaderStory: this.isShowStory,
             isShowHeaderRules: this.isShowRules,
             isShowHeaderPlay: this.isShowPlay,
-            isShowStep: true
+            isShowStep: !this.isShowPlay
         }
     },
     methods: {
@@ -48,29 +48,29 @@ export default {
                 case 'home':
                     this.$router.push({ path: '/home' });
                     this.isShowStep = this.isShowHeaderHome = this.isShowHeaderIntroduction = true;
-                    this.isShowHeaderStory = this.isShowHeaderRules = this.isShowPlay = false;
+                    this.isShowHeaderStory = this.isShowHeaderRules = this.isShowHeaderPlay = false;
                     $("html, body").animate({scrollTop: 0}, {duration: 500,easing: "swing"});
                     return;
                 case 'introduction':
                     this.$router.push({ path: '/home' });
                     this.isShowStep = this.isShowHeaderHome = this.isShowHeaderIntroduction = true;
-                    this.isShowHeaderStory = this.isShowHeaderRules = this.isShowPlay = false;
+                    this.isShowHeaderStory = this.isShowHeaderRules = this.isShowHeaderPlay = false;
                     $("html, body").animate({scrollTop: 0}, {duration: 500,easing: "swing"});
                     return;
                 case 'story':
                     this.$router.push({ path: '/home' });
                     this.isShowStep = this.isShowHeaderStory = true;
-                    this.isShowHeaderHome = this.isShowHeaderIntroduction = this.isShowHeaderRules = this.isShowPlay = false;
+                    this.isShowHeaderHome = this.isShowHeaderIntroduction = this.isShowHeaderRules = this.isShowHeaderPlay = false;
                     $("html, body").animate({scrollTop: 1080}, {duration: 500,easing: "swing"});
                     return;
                 case 'rules':
                     this.$router.push({ path: '/home' });
                     this.isShowStep = this.isShowHeaderRules = true;
-                    this.isShowHeaderHome = this.isShowHeaderIntroduction = this.isShowHeaderStory = this.isShowPlay = false;
+                    this.isShowHeaderHome = this.isShowHeaderIntroduction = this.isShowHeaderStory = this.isShowHeaderPlay = false;
                     $("html, body").animate({scrollTop: 1080 * 2}, {duration: 500,easing: "swing"});
                     return;
                 case 'play':
-                    this.isShowPlay = true;
+                    this.isShowHeaderPlay = true;
                     this.isShowStep = this.isShowHeaderHome = this.isShowHeaderIntroduction = this.isShowHeaderStory = this.isShowHeaderRules = false;
                     this.$router.push({ path: '/videolist' });
                     return;
