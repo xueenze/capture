@@ -150,7 +150,6 @@ export default {
                         top: 25px;
                         right: 40px;
                         font-size: 18px;
-                        font-family: Arial, Helvetica, sans-serif;
                         font-weight: bold;
                         cursor: pointer;
                     }

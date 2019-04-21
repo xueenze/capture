@@ -85,7 +85,7 @@ export default {
         .header-wrapper{
             top: 0;
             left: 0;
-            width: 1920px;
+            width: 100%;
             height: 100px;
             background-color: #000000;
             z-index: 999;
@@ -165,6 +165,7 @@ export default {
             a{
                 width: 20px;
                 height: 20px;
+                margin-bottom: 15px;
                 border-radius: 20px;
                 background-color: rgba(255, 255, 255, 0.15);
                 display: inline-block;
