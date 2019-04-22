@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "JS截图监控",
   "scripts": {
-    "dev": "concurrently \"json-server --watch mock/userlist.json\" \"http-server -p 8888\" \"webpack-dev-server --hot --open --inline --config build/webpack.dev.js\"",
+    "dev": "concurrently \"json-server --watch mock/userlist.json\" \"http-server -p 8888\" \"webpack-dev-server --hot --open --inline --config build/webpack.dev.js --host 0.0.0.0\"",
     "build": "webpack --config build/webpack.prod.js",
     "lint": "eslint --fix --ext .js,.vue src"
   },

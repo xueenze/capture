@@ -353,7 +353,7 @@ export default {
                 color: #ffffff;
 
                 .cover{
-                    width: 90%;
+                    width: 100%;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);

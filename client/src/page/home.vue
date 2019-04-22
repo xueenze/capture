@@ -119,7 +119,7 @@ export default {
     }
 
     .introduction-wrapper{
-        top: 303pt;
+        top: 306pt;
         left: 845pt;
         z-index: 3;
         .content{
@@ -142,7 +142,7 @@ export default {
     }
 
     .story-title{
-        top: 1330pt;
+        top: 1332pt;
         left: 145pt;
         color: rgba(198, 198, 198, 0.8);
         font-size: 81pt;
