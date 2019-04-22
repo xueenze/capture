@@ -39,6 +39,23 @@ export default {
             isShowStep: !this.isShowPlay
         }
     },
+    mounted() {
+        // 监控当前的滚动事件
+        window.addEventListener('scroll', () => {
+            if (this.$route.name == 'home') {
+                if ($(window).scrollTop() < 720) {
+                    this.isShowStep = this.isShowHeaderHome = this.isShowHeaderIntroduction = true;
+                    this.isShowHeaderStory = this.isShowHeaderRules = this.isShowHeaderPlay = false;
+                } else if ($(window).scrollTop() >= 720 && $(window).scrollTop() < 720 * 3) {
+                    this.isShowStep = this.isShowHeaderStory = true;
+                    this.isShowHeaderHome = this.isShowHeaderIntroduction = this.isShowHeaderRules = this.isShowHeaderPlay = false;
+                } else {
+                    this.isShowStep = this.isShowHeaderRules = true;
+                    this.isShowHeaderHome = this.isShowHeaderIntroduction = this.isShowHeaderStory = this.isShowHeaderPlay = false;
+                }
+            }
+        });
+    },
     methods: {
         /**
          * 标题点击

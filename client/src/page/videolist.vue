@@ -130,6 +130,7 @@ export default {
         }
     },
     mounted() {
+        $("html, body").animate({scrollTop: 0}, {duration: 200,easing: "swing"});
         this.init();
     },
     methods: {
@@ -385,6 +386,8 @@ export default {
                               font-size: 21pt;
                               color: rgba(198, 198, 198, 0.8);
                               line-height: 25pt;
+                              word-break: break-all;
+                              white-space: nowrap;
                             }
                         }
                       }

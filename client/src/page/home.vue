@@ -121,7 +121,7 @@ export default {
     }
 
     .introduction-wrapper{
-        top: 303pt;
+        top: 304pt;
         left: 845pt;
         z-index: 3;
         .content{
