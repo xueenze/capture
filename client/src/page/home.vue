@@ -1,6 +1,6 @@
 <template>
     <div class = "wrapper rel">
-        <client-header 
+        <client-header ref = "header"
             :isShowHome = "true"
             :isShowIntroduction = "true"
             :isShowStory = "false"
@@ -62,10 +62,9 @@
                 </p>
                 <p class = "desc" style = "margin-bottom: 0;">
                     Are you ready?
-                    <span style = "text-decoration: underline;margin-left: 50pt;cursor: pointer;"
-                        @click = "goTo('play')">Yes!</span>
-                    <span style = "text-decoration: underline;margin-left: 30pt;">
-                        No, I want to read the introduction again
+                    <span @click = "goTo('play')">Yes!</span>
+                    <span @click = "goTo('home')">
+                        No, I want to read the introduction again.
                     </span>
                 </p>
             </div>
@@ -94,6 +93,9 @@ export default {
             case 'play':
               this.$router.push({ path: '/videolist' });
               break;
+            case 'home':
+              this.$refs.header.headerClick('home');
+              break;
           }
         }
     }
@@ -119,7 +121,7 @@ export default {
     }
 
     .introduction-wrapper{
-        top: 306pt;
+        top: 303pt;
         left: 845pt;
         z-index: 3;
         .content{
@@ -129,11 +131,11 @@ export default {
                 line-height: 81pt;
                 height: 81pt;
                 font-weight: bold;
-                margin-bottom: 27pt;
+                margin-bottom: 28pt;
             }
 
             .detail{
-                margin-bottom: 27pt;
+                margin-bottom: 28pt;
                 line-height: 32pt;
                 font-size: 27pt;
                 font-weight: bold;
@@ -153,7 +155,7 @@ export default {
     }
 
     .story-content{
-        top: 1130pt;
+        top: 1132pt;
         left: 412pt;
         background-image: url(../assets/images/character/character_bg.png);
         width: 1548pt;
@@ -188,23 +190,34 @@ export default {
                     height: 25pt;
                     background-size: contain;
                     display: inline-block;
-                    vertical-align: text-top;
+                    vertical-align: text-bottom;
                     margin: 0 10pt;
+                    background-repeat: no-repeat;
+                    box-sizing: content-box;
                 }
 
                 .right{
                     background-image: url(../assets/images/videolist/right.png);
-
+                    padding-bottom: 2pt;
                 }
 
                 .wrong{
                     background-image: url(../assets/images/videolist/wrong.png);
+                    padding-bottom: 2pt;
                 }
 
                 .share{
                     background-image: url(../assets/images/home/share.png);
-                    width: 25pt;
-                    height: 25pt;
+                    width: 30pt;
+                    height: 30pt;
+                    opacity: 0.8;
+                    margin-right: 8pt;
+                }
+
+                span{
+                    text-decoration: underline;
+                    margin-left: 30pt;
+                    cursor: pointer;
                 }
             }
         }

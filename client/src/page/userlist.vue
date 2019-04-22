@@ -25,6 +25,7 @@
                 <div class="modal-content">
                     <div class="modal-body rel">
                         <p class = "abs close-modal" @click = "closeModal">CLOSE</p>
+                        <div class = "line"></div>
                         <img :src="currentUser.capturesrc" alt>
                     </div>
                 </div>
@@ -143,21 +144,29 @@ export default {
 
                 .modal-content{
                     background-color: #000000;
-                    box-shadow: 0 1pt 50pt #ffffff;
+                    box-shadow: 0 1pt 20pt rgba(214, 214, 214, 0.5);
+                    border-radius: 25pt;
 
                     .close-modal{
                         color: rgba(198, 198, 198, 0.5);
-                        top: 25pt;
-                        right: 40pt;
+                        top: 22pt;
+                        right: 50pt;
                         font-size: 18pt;
                         font-weight: bold;
                         cursor: pointer;
                     }
 
+                    .line{
+                        margin: 50pt auto 0;
+                        height: 4pt;
+                        width: 855pt;
+                        display: block;
+                        background-color: rgba(112, 112, 112, 0.5);
+                    }
+
                     img{
+                        margin-top: 15pt;
                         width: 100%;
-                        margin-top: 50pt;
-                        border-top: 2pt rgba(112, 112, 112, 0.5) solid;
                     }
                 }
             }

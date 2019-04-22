@@ -194,7 +194,7 @@ export default {
                     this.isShowMask = false;
                     // 直接跳转至截图列表
                     this.goTo('videolist');
-                    $('#captureWrapper').modal('show');
+                    // $('#captureWrapper').modal('show');
                 });
             }, 0);
         },
@@ -307,6 +307,7 @@ export default {
             height: 160pt;
             margin: 380pt auto 0;
             background-size: cover;
+            opacity: 0.5;
           }
         }
 
@@ -325,16 +326,17 @@ export default {
             background-size: contain;
             top: 20pt;
             left: 20pt;
-            box-shadow: inset 0 3pt 20pt 6pt #000000;
+            opacity: 0.3;
           }
 
           &-mask{
             width: 80pt;
             height: 80pt;
-            background-color: rgba(255,255,255,0.15);
+            background-color: rgba(255,255,255,0.3);
             z-index: 2;
             border-top-left-radius: 10pt;
             border-bottom-left-radius: 10pt;
+            opacity: 0.25;
           }
         }
 
@@ -375,13 +377,13 @@ export default {
                             top: 19pt;
                             .title{
                               font-size: 18pt;
-                              color: rgba(136, 136, 136, 1);
-                              margin-bottom: 20pt;
+                              color: rgba(136, 136, 136, 0.8);
+                              margin-bottom: 12pt;
                             }
 
                             .detail{
                               font-size: 21pt;
-                              color: #c6c6c6;
+                              color: rgba(198, 198, 198, 0.8);
                               line-height: 25pt;
                             }
                         }
@@ -412,7 +414,7 @@ export default {
                     width: 25pt;
                     height: 25pt;
                     background-size: cover;
-                    left: 45pt;
+                    left: 35pt;
                     top: 50%;
                     transform: translateY(-50%);
                     cursor: pointer;
@@ -427,7 +429,7 @@ export default {
                     width: 25pt;
                     height: 25pt;
                     background-size: cover;
-                    right: 45pt;
+                    right: 35pt;
                     top: 50%;
                     transform: translateY(-50%);
                     cursor: pointer;
@@ -439,10 +441,12 @@ export default {
 
                   .result-right {
                     background-image: url(../assets/images/videolist/right.png);
+                    opacity: 0.6;
                   }
 
                   .result-wrong {
                     background-image: url(../assets/images/videolist/wrong.png);
+                    opacity: 0.8;
                   }
 
                   .result{
