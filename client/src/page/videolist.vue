@@ -303,16 +303,16 @@ export default {
           i{
             background-image: url(../assets/images/videolist/loading.png);
             display: block;
-            width: 160px;
-            height: 160px;
-            margin: 380px auto 0;
+            width: 160pt;
+            height: 160pt;
+            margin: 380pt auto 0;
             background-size: cover;
           }
         }
 
         .capture-icon{
-          height: 80px;
-          width: 80px;
+          height: 80pt;
+          width: 80pt;
           right: 0;
           top: 50%;
           transform: translateY(-50%);
@@ -320,34 +320,36 @@ export default {
           i{
             display: inline-block;
             background-image: url(../assets/images/home/share.png);
-            width: 40px;
-            height: 40px;
+            width: 40pt;
+            height: 40pt;
             background-size: contain;
-            top: 20px;
-            left: 20px;
-            box-shadow: inset 0 3px 20px 6px #000000;
+            top: 20pt;
+            left: 20pt;
+            box-shadow: inset 0 3pt 20pt 6pt #000000;
           }
 
           &-mask{
-            width: 80px;
-            height: 80px;
+            width: 80pt;
+            height: 80pt;
             background-color: rgba(255,255,255,0.15);
             z-index: 2;
+            border-top-left-radius: 10pt;
+            border-bottom-left-radius: 10pt;
           }
         }
 
         .video-list{
-            margin-top: 140px;
+            margin-top: 140pt;
             background-color: #000000;
         
         .video-item{
-            margin: 15px;
-            width: 442.5px;
+            margin: 15pt;
+            width: 442.5pt;
             padding: 0;
 
             .content{
-                height: 250px;
-                border-radius: 10px;
+                height: 250pt;
+                border-radius: 10pt;
                 color: #ffffff;
 
                 .cover{
@@ -358,29 +360,29 @@ export default {
 
                     .cover-default{
                       .media-left{
-                        padding-right: 15px;
+                        padding-right: 15pt;
                         a{
                           display: inline-block;
                           img{
-                              width: 150px;
-                              height: 150px;
+                              width: 150pt;
+                              height: 150pt;
                           }
                         }
                       }
 
                       .media-body{
                         .desc{
-                            top: 19px;
+                            top: 19pt;
                             .title{
-                              font-size: 18px;
+                              font-size: 18pt;
                               color: rgba(136, 136, 136, 1);
-                              margin-bottom: 20px;
+                              margin-bottom: 20pt;
                             }
 
                             .detail{
-                              font-size: 21px;
+                              font-size: 21pt;
                               color: #c6c6c6;
-                              line-height: 25px;
+                              line-height: 25pt;
                             }
                         }
                       }
@@ -388,8 +390,8 @@ export default {
                       .content-shadow{
                           background-image: url(../assets/images/videolist/content_shadow.png);
                           width: 100%;
-                          height: 260px;
-                          background-position: center -45px;
+                          height: 260pt;
+                          background-position: center -45pt;
                           background-repeat: no-repeat;
                           background-size: cover;
                           top: 0;
@@ -407,10 +409,10 @@ export default {
 
                   .wrong{
                     background-image: url(../assets/images/videolist/wrong.png);
-                    width: 25px;
-                    height: 25px;
+                    width: 25pt;
+                    height: 25pt;
                     background-size: cover;
-                    left: 45px;
+                    left: 45pt;
                     top: 50%;
                     transform: translateY(-50%);
                     cursor: pointer;
@@ -422,10 +424,10 @@ export default {
 
                   .right{
                     background-image: url(../assets/images/videolist/right.png);
-                    width: 25px;
-                    height: 25px;
+                    width: 25pt;
+                    height: 25pt;
                     background-size: cover;
-                    right: 45px;
+                    right: 45pt;
                     top: 50%;
                     transform: translateY(-50%);
                     cursor: pointer;
@@ -444,8 +446,8 @@ export default {
                   }
 
                   .result{
-                    width: 200px;
-                    height: 200px;
+                    width: 200pt;
+                    height: 200pt;
                     background-size: contain;
                     left: 50%;
                     top: 50%;

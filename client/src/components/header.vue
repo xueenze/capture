@@ -61,13 +61,13 @@ export default {
                     this.$router.push({ path: '/home' });
                     this.isShowStep = this.isShowHeaderStory = true;
                     this.isShowHeaderHome = this.isShowHeaderIntroduction = this.isShowHeaderRules = this.isShowHeaderPlay = false;
-                    $("html, body").animate({scrollTop: 1080}, {duration: 500,easing: "swing"});
+                    $("html, body").animate({scrollTop: 1440}, {duration: 500,easing: "swing"});
                     return;
                 case 'rules':
                     this.$router.push({ path: '/home' });
                     this.isShowStep = this.isShowHeaderRules = true;
                     this.isShowHeaderHome = this.isShowHeaderIntroduction = this.isShowHeaderStory = this.isShowHeaderPlay = false;
-                    $("html, body").animate({scrollTop: 1080 * 2}, {duration: 500,easing: "swing"});
+                    $("html, body").animate({scrollTop: 1440 * 2}, {duration: 500,easing: "swing"});
                     return;
                 case 'play':
                     this.isShowHeaderPlay = true;
@@ -86,21 +86,22 @@ export default {
             top: 0;
             left: 0;
             width: 100%;
-            height: 100px;
+            height: 100pt;
             background-color: #000000;
             z-index: 999;
-            padding-left: 55px;
+            padding-left: 55pt;
             display: flex;
             flex-direction: row;
             align-items: center;
-            box-shadow: 0px 4px 20px 1px;
+            box-shadow: 0pt 4pt 20pt 1pt;
 
             .home{
                 background-image: url(../assets/images/header/home.png);
                 background-repeat: no-repeat;
-                width: 790px;
-                height: 50px;
+                width: 790pt;
+                height: 25pt;
                 background-size: contain;
+                flex-shrink: 0;
             }
 
             .other-buttons{
@@ -108,10 +109,10 @@ export default {
 
                 .normal{
                     background-repeat: no-repeat;
-                    width: 85px;
-                    height: 20px;
+                    width: 85pt;
+                    height: 20pt;
                     background-size: contain;
-                    margin-right: 195px;
+                    margin-right: 195pt;
                 }
 
                 .introduction{
@@ -159,14 +160,15 @@ export default {
         .step-wrapper{
             top: 50%;
             transform: translateY(-50%);
-            left: 55px;
-            width: 20px;
+            left: 55pt;
+            width: 20pt;
+            z-index: 999;
 
             a{
-                width: 20px;
-                height: 20px;
-                margin-bottom: 15px;
-                border-radius: 20px;
+                width: 20pt;
+                height: 20pt;
+                margin-bottom: 15pt;
+                border-radius: 20pt;
                 background-color: rgba(255, 255, 255, 0.15);
                 display: inline-block;
             }

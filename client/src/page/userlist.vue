@@ -1,5 +1,5 @@
 <template>
-    <div class = "user-list-wrapper container-fluid" style = "width: 1950px;">
+    <div class = "user-list-wrapper container-fluid">
         <client-header 
             :isShowHome = "false"
             :isShowIntroduction = "false"
@@ -108,16 +108,16 @@ export default {
         background-color: #000000;
 
         .user-list{
-            margin-top: 140px;
+            margin-top: 140pt;
 
             .user-item{
-                margin: 15px;
-                width: 443px;
-                height: 250px;
+                margin: 15pt;
+                width: 443pt;
+                height: 280pt;
                 padding: 0;
 
                 .content{
-                    height: 200px;
+                    height: 250pt;
                     overflow: hidden;
 
                     .user-capture{
@@ -127,37 +127,37 @@ export default {
 
                 .user-name{
                     text-align: center;
-                    margin: 10px auto;
-                    color: #C8C8C8;
-                    font-size: 18px;
+                    margin: 10pt auto;
+                    color: rgba(200, 200, 200, 0.7);
+                    font-size: 18pt;
                 }
             }
         }
 
         .modal{
             background-color: rgba(0, 0, 0, 0.8);
-            top: 100px;
+            top: 100pt;
             .modal-dialog{
-                width: 960px;
-                margin-top: 100px;
+                width: 960pt;
+                margin-top: 100pt;
 
                 .modal-content{
                     background-color: #000000;
-                    box-shadow: 0 1px 50px #ffffff;
+                    box-shadow: 0 1pt 50pt #ffffff;
 
                     .close-modal{
                         color: rgba(198, 198, 198, 0.5);
-                        top: 25px;
-                        right: 40px;
-                        font-size: 18px;
+                        top: 25pt;
+                        right: 40pt;
+                        font-size: 18pt;
                         font-weight: bold;
                         cursor: pointer;
                     }
 
                     img{
                         width: 100%;
-                        margin-top: 50px;
-                        border-top: 2px rgba(112, 112, 112, 0.5) solid;
+                        margin-top: 50pt;
+                        border-top: 2pt rgba(112, 112, 112, 0.5) solid;
                     }
                 }
             }
