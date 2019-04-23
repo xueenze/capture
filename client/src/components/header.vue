@@ -78,13 +78,13 @@ export default {
                     this.$router.push({ path: '/home' });
                     this.isShowStep = this.isShowHeaderStory = true;
                     this.isShowHeaderHome = this.isShowHeaderIntroduction = this.isShowHeaderRules = this.isShowHeaderPlay = false;
-                    $("html, body").animate({scrollTop: 1440}, {duration: 500,easing: "swing"});
+                    $("html, body").animate({scrollTop: 1353}, {duration: 500,easing: "swing"});
                     return;
                 case 'rules':
                     this.$router.push({ path: '/home' });
                     this.isShowStep = this.isShowHeaderRules = true;
                     this.isShowHeaderHome = this.isShowHeaderIntroduction = this.isShowHeaderStory = this.isShowHeaderPlay = false;
-                    $("html, body").animate({scrollTop: 1440 * 2}, {duration: 500,easing: "swing"});
+                    $("html, body").animate({scrollTop: 2775}, {duration: 500,easing: "swing"});
                     return;
                 case 'play':
                     this.isShowHeaderPlay = true;
