@@ -144,7 +144,7 @@ export default {
     }
 
     .story-title{
-        top: 1332pt;
+        top: 1334pt;
         left: 145pt;
         color: rgba(198, 198, 198, 0.8);
         font-size: 81pt;
@@ -155,7 +155,7 @@ export default {
     }
 
     .story-content{
-        top: 1132pt;
+        top: 1135pt;
         left: 412pt;
         background-image: url(../assets/images/character/character_bg.png);
         width: 1548pt;
