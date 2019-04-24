@@ -116,6 +116,7 @@ export default {
                 width: 443pt;
                 height: 280pt;
                 padding: 0;
+                cursor: pointer;
 
                 .content{
                     height: 250pt;
