@@ -59,6 +59,7 @@
     "axios": "^0.18.0",
     "bootstrap": "^3.4.1",
     "es6-promise": "^4.2.5",
+    "fastclick": "^1.0.6",
     "html2canvas": "^1.0.0-alpha.12",
     "jquery": "^1.12.4",
     "moment": "^2.24.0",

@@ -10,10 +10,10 @@
         <div id = "story" class = "normal"></div>
         <div id = "rules" class = "normal"></div>
         <div class = "special abs">
-            <div style = "margin-bottom: 80pt;">
+            <div style = "margin-bottom: 80px;">
                 <p>HOW CAN</p>
                 <p>WE</p>
-                <p style = "margin-bottom: 100pt;">DISTINGUISH</p>
+                <p style = "margin-bottom: 100px;">DISTINGUISH</p>
                 <p>RUMORS</p>
                 <p>FROM</p>
                 <p>FACTS?</p>
@@ -107,116 +107,117 @@ export default {
     background-color: #000000;
 
     .special{
-        font-size: 255pt;
+        font-size: 255px;
         font-weight: bold;
         color: rgba(175, 17, 29, 0.7);
-        top: 130pt;
-        left: 130pt;
+        top: 130px;
+        left: 130px;
         z-index: 2;
 
         p{
-            line-height: 310pt;
+            line-height: 310px;
             margin-bottom: 0;
         }
     }
 
     .introduction-wrapper{
-        top: 304pt;
-        left: 845pt;
+        top: 304px;
+        left: 845px;
         z-index: 3;
         .content{
             .title{
                 color: rgba(198, 198, 198, 0.8);
-                font-size: 81pt;
-                line-height: 81pt;
-                height: 81pt;
+                font-size: 81px;
+                line-height: 81px;
+                height: 81px;
                 font-weight: bold;
-                margin-bottom: 28pt;
+                margin-bottom: 28px;
             }
 
             .detail{
-                margin-bottom: 28pt;
-                line-height: 32pt;
-                font-size: 27pt;
+                margin-bottom: 28px;
+                line-height: 32px;
+                font-size: 27px;
                 font-weight: bold;
             }
         }
     }
 
     .story-title{
-        top: 1334pt;
-        left: 145pt;
+        top: 1334px;
+        left: 145px;
         color: rgba(198, 198, 198, 0.8);
-        font-size: 81pt;
-        line-height: 81pt;
-        height: 81pt;
+        font-size: 81px;
+        line-height: 81px;
+        height: 81px;
         font-weight: bold;
         z-index: 3;
     }
 
     .story-content{
-        top: 1135pt;
-        left: 412pt;
+        top: 1135px;
+        left: 412px;
         background-image: url(../assets/images/character/character_bg.png);
-        width: 1548pt;
-        height: 900pt;
+        width: 1548px;
+        height: 900px;
         background-size: contain;
         z-index: 1;
     }
 
     .rules-wrapper{
-        top: 2420pt;
-        left: 845pt;
+        top: 2420px;
+        left: 845px;
         z-index: 3;
         .content{
             .title{
                 color: rgba(198, 198, 198, 0.8);
-                font-size: 81pt;
-                line-height: 81pt;
-                height: 81pt;
+                font-size: 81px;
+                line-height: 81px;
+                height: 81px;
                 font-weight: bold;
-                margin-bottom: 25pt;
+                margin-bottom: 25px;
+                white-space: nowrap;
             }
 
             .desc{
                 color: rgba(198, 198, 198, 0.8);
-                font-size: 27pt;
+                font-size: 27px;
                 font-weight: bold;
-                margin-bottom: 32pt;
-                line-height: 32pt;
+                margin-bottom: 32px;
+                line-height: 32px;
 
                 i{
-                    width: 25pt;
-                    height: 25pt;
+                    width: 25px;
+                    height: 25px;
                     background-size: contain;
                     display: inline-block;
                     vertical-align: text-bottom;
-                    margin: 0 10pt;
+                    margin: 0 10px;
                     background-repeat: no-repeat;
                     box-sizing: content-box;
                 }
 
                 .right{
                     background-image: url(../assets/images/videolist/right.png);
-                    padding-bottom: 2pt;
+                    padding-bottom: 2px;
                 }
 
                 .wrong{
                     background-image: url(../assets/images/videolist/wrong.png);
-                    padding-bottom: 2pt;
+                    padding-bottom: 2px;
                 }
 
                 .share{
                     background-image: url(../assets/images/home/share.png);
-                    width: 30pt;
-                    height: 30pt;
+                    width: 30px;
+                    height: 30px;
                     opacity: 0.8;
-                    margin-right: 8pt;
+                    margin-right: 8px;
                 }
 
                 span{
                     text-decoration: underline;
-                    margin-left: 30pt;
+                    margin-left: 30px;
                     cursor: pointer;
                 }
             }
@@ -224,7 +225,7 @@ export default {
     }
 
     .normal{
-        height: 1080pt;
+        height: 1080px;
     }
 }
 </style>

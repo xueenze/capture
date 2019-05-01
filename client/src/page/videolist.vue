@@ -32,8 +32,9 @@
                 <i class="content-shadow abs"></i>
               </div>
             </div>
-            <video :id = "columnItem.id" preload="none"
-                class="abs" v-show="columnItem.isClick" :src="columnItem.src" loop="loop"></video>
+            <video webkit-playsinline playsinline x5-video-player-fullscreen="true" x5-video-player-type="h5" 
+              :id = "columnItem.id" preload="none"
+              class="abs" v-show="columnItem.isClick" :src="columnItem.src" loop="loop"></video>
             <div class = "video-modal" v-show="columnItem.isShowVideoOperate">
               <i class = "video-mask abs"></i>
               <i class = "wrong abs" v-show="columnItem.isShowWrong"
@@ -292,6 +293,7 @@ export default {
 
     .video-list-wrapper{
         background-color: #000000;
+        min-width: 1920px;
 
         .mask{
           position: fixed;
@@ -304,17 +306,17 @@ export default {
           i{
             background-image: url(../assets/images/videolist/loading.png);
             display: block;
-            width: 160pt;
-            height: 160pt;
-            margin: 380pt auto 0;
+            width: 160px;
+            height: 160px;
+            margin: 380px auto 0;
             background-size: cover;
             opacity: 0.5;
           }
         }
 
         .capture-icon{
-          height: 80pt;
-          width: 80pt;
+          height: 80px;
+          width: 80px;
           right: 0;
           top: 50%;
           transform: translateY(-50%);
@@ -322,37 +324,38 @@ export default {
           i{
             display: inline-block;
             background-image: url(../assets/images/home/share.png);
-            width: 40pt;
-            height: 40pt;
+            width: 40px;
+            height: 40px;
             background-size: contain;
-            top: 20pt;
-            left: 20pt;
+            top: 20px;
+            left: 20px;
             opacity: 0.3;
           }
 
           &-mask{
-            width: 80pt;
-            height: 80pt;
+            width: 80px;
+            height: 80px;
             background-color: rgba(255,255,255,0.3);
             z-index: 2;
-            border-top-left-radius: 10pt;
-            border-bottom-left-radius: 10pt;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
             opacity: 0.25;
           }
         }
 
         .video-list{
-            margin-top: 140pt;
+            margin-top: 140px;
             background-color: #000000;
         
         .video-item{
-            margin: 15pt;
-            width: 442.5pt;
+            margin: 15px;
+            width: 442.5px;
             padding: 0;
+            display:inline-block;
 
             .content{
-                height: 250pt;
-                border-radius: 10pt;
+                height: 250px;
+                border-radius: 10px;
                 color: #ffffff;
 
                 .cover{
@@ -363,29 +366,29 @@ export default {
 
                     .cover-default{
                       .media-left{
-                        padding-right: 15pt;
+                        padding-right: 15px;
                         a{
                           display: inline-block;
                           img{
-                              width: 150pt;
-                              height: 150pt;
+                              width: 150px;
+                              height: 150px;
                           }
                         }
                       }
 
                       .media-body{
                         .desc{
-                            top: 19pt;
+                            top: 19px;
                             .title{
-                              font-size: 18pt;
+                              font-size: 18px;
                               color: rgba(136, 136, 136, 0.8);
-                              margin-bottom: 12pt;
+                              margin-bottom: 12px;
                             }
 
                             .detail{
-                              font-size: 21pt;
+                              font-size: 21px;
                               color: rgba(198, 198, 198, 0.8);
-                              line-height: 25pt;
+                              line-height: 25px;
                               word-break: break-all;
                               white-space: nowrap;
                             }
@@ -395,8 +398,8 @@ export default {
                       .content-shadow{
                           background-image: url(../assets/images/videolist/content_shadow.png);
                           width: 100%;
-                          height: 260pt;
-                          background-position: center -45pt;
+                          height: 260px;
+                          background-position: center -45px;
                           background-repeat: no-repeat;
                           background-size: cover;
                           top: 0;
@@ -414,10 +417,10 @@ export default {
 
                   .wrong{
                     background-image: url(../assets/images/videolist/wrong.png);
-                    width: 25pt;
-                    height: 25pt;
+                    width: 25px;
+                    height: 25px;
                     background-size: cover;
-                    left: 35pt;
+                    left: 35px;
                     top: 50%;
                     transform: translateY(-50%);
                     cursor: pointer;
@@ -429,10 +432,10 @@ export default {
 
                   .right{
                     background-image: url(../assets/images/videolist/right.png);
-                    width: 25pt;
-                    height: 25pt;
+                    width: 25px;
+                    height: 25px;
                     background-size: cover;
-                    right: 35pt;
+                    right: 35px;
                     top: 50%;
                     transform: translateY(-50%);
                     cursor: pointer;
@@ -453,8 +456,8 @@ export default {
                   }
 
                   .result{
-                    width: 200pt;
-                    height: 200pt;
+                    width: 200px;
+                    height: 200px;
                     background-size: contain;
                     left: 50%;
                     top: 50%;
@@ -467,6 +470,35 @@ export default {
                     transform: translateY(-50%);
                     width: 100%;
                     height: 100%;
+                }
+
+                video::-webkit-media-controls-fullscreen-button {
+                  display: none !important;
+                }
+                video::-webkit-media-controls-play-button {
+                  display: none !important;
+                }
+                video::-webkit-media-controls-timeline {
+                  display: none !important;
+                }
+                video::-webkit-media-controls-current-time-display{
+                  display: none !important;
+                }
+                video::-webkit-media-controls-time-remaining-display {
+                  display: none !important;
+                }
+                video::-webkit-media-controls-mute-button {
+                  display:  !important;
+                }
+                video::-webkit-media-controls-toggle-closed-captions-button {
+                  display: none !important;
+                }
+                video::-webkit-media-controls-volume-slider {
+                  display: none !important;
+                }
+
+                video::-webkit-media-controls {
+                  display:none !important;
                 }
             }
 

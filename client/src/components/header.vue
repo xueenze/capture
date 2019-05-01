@@ -1,6 +1,6 @@
 <template>
-    <div class = "wrapper">
-        <div class = "fix header-wrapper">
+    <div class = "wrapper rel">
+        <div class = "abs header-wrapper">
             <a href="javascript:;" class = "home" @click = "headerClick('home')"></a>
             <div class = "other-buttons">
                 <a href="javascript:;" :class = "['introduction normal', isShowHeaderIntroduction ? 'introduction-show' : '']" 
@@ -12,14 +12,6 @@
                 <a href="javascript:;" :class = "['play normal', isShowPlay ? 'play-show' : '']" 
                     @click = "headerClick('play')"></a>
             </div>
-        </div>
-        <div class = "step-wrapper fix" v-show = "isShowStep">
-            <a href="javacript:;" :class = "{hover: isShowHeaderIntroduction}"
-                 @click = "headerClick('introduction')"></a>
-            <a href="javacript:;" :class = "{hover: isShowHeaderStory}"
-                @click = "headerClick('story')"></a>
-            <a href="javacript:;" :class = "{hover: isShowHeaderRules}"
-                @click = "headerClick('rules')"></a>
         </div>
     </div>
 </template>
@@ -36,7 +28,7 @@ export default {
             isShowHeaderStory: this.isShowStory,
             isShowHeaderRules: this.isShowRules,
             isShowHeaderPlay: this.isShowPlay,
-            isShowStep: !this.isShowPlay
+            isShowStep: !this.isShowPlay && false
         }
     },
     mounted() {
@@ -102,21 +94,20 @@ export default {
         .header-wrapper{
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100pt;
+            height: 100px;
             background-color: #000000;
             z-index: 999;
-            padding-left: 55pt;
+            padding-left: 55px;
             display: flex;
             flex-direction: row;
             align-items: center;
-            box-shadow: 0pt 4pt 20pt 1pt;
+            box-shadow: 0px 4px 20px 1px;
 
             .home{
                 background-image: url(../assets/images/header/home.png);
                 background-repeat: no-repeat;
-                width: 790pt;
-                height: 25pt;
+                width: 790px;
+                height: 25px;
                 background-size: contain;
                 flex-shrink: 0;
             }
@@ -126,10 +117,10 @@ export default {
 
                 .normal{
                     background-repeat: no-repeat;
-                    width: 85pt;
-                    height: 20pt;
+                    width: 85px;
+                    height: 20px;
                     background-size: contain;
-                    margin-right: 195pt;
+                    margin-right: 195px;
                 }
 
                 .introduction{
@@ -177,15 +168,15 @@ export default {
         .step-wrapper{
             top: 50%;
             transform: translateY(-50%);
-            left: 55pt;
-            width: 20pt;
+            left: 55px;
+            width: 20px;
             z-index: 999;
 
             a{
-                width: 20pt;
-                height: 20pt;
-                margin-bottom: 15pt;
-                border-radius: 20pt;
+                width: 20px;
+                height: 20px;
+                margin-bottom: 15px;
+                border-radius: 20px;
                 background-color: rgba(255, 255, 255, 0.15);
                 display: inline-block;
             }

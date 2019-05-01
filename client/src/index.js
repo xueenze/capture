@@ -15,6 +15,9 @@ import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min';
 
+import FastClick from 'fastclick';
+FastClick.attach(document.body);
+
 // 注册路由
 Vue.use(VueRouter);
 // 将ajax请求方法赋给$ajax

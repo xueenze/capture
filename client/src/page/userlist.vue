@@ -107,19 +107,21 @@ export default {
 <style lang="less" scoped>
     .user-list-wrapper{
         background-color: #000000;
+        min-width: 1940px;
 
         .user-list{
-            margin-top: 140pt;
+            margin-top: 140px;
 
             .user-item{
-                margin: 15pt;
-                width: 443pt;
-                height: 280pt;
+                margin: 15px;
+                width: 443px;
+                height: 280px;
                 padding: 0;
                 cursor: pointer;
+                display: inline-block;
 
                 .content{
-                    height: 250pt;
+                    height: 250px;
                     overflow: hidden;
 
                     .user-capture{
@@ -129,44 +131,44 @@ export default {
 
                 .user-name{
                     text-align: center;
-                    margin: 10pt auto;
+                    margin: 10px auto;
                     color: rgba(200, 200, 200, 0.7);
-                    font-size: 18pt;
+                    font-size: 18px;
                 }
             }
         }
 
         .modal{
             background-color: rgba(0, 0, 0, 0.8);
-            top: 100pt;
+            top: 100px;
             .modal-dialog{
-                width: 960pt;
-                margin-top: 100pt;
+                width: 960px;
+                margin-top: 100px;
 
                 .modal-content{
                     background-color: #000000;
-                    box-shadow: 0 1pt 20pt rgba(214, 214, 214, 0.5);
-                    border-radius: 25pt;
+                    box-shadow: 0 1px 20px rgba(214, 214, 214, 0.5);
+                    border-radius: 25px;
 
                     .close-modal{
                         color: rgba(198, 198, 198, 0.5);
-                        top: 22pt;
-                        right: 50pt;
-                        font-size: 18pt;
+                        top: 22px;
+                        right: 50px;
+                        font-size: 18px;
                         font-weight: bold;
                         cursor: pointer;
                     }
 
                     .line{
-                        margin: 50pt auto 0;
-                        height: 4pt;
-                        width: 855pt;
+                        margin: 50px auto 0;
+                        height: 4px;
+                        width: 855px;
                         display: block;
                         background-color: rgba(112, 112, 112, 0.5);
                     }
 
                     img{
-                        margin-top: 15pt;
+                        margin-top: 15px;
                         width: 100%;
                     }
                 }
