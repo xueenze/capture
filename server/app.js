@@ -29,6 +29,7 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/mobile', express.static(path.join(__dirname, 'public-mobile')));
 app.use('/capture', express.static(path.join(__dirname, 'capture')));
 
 app.use('/', indexRouter);
