@@ -10,10 +10,10 @@
         <div id = "story" class = "normal"></div>
         <div id = "rules" class = "normal"></div>
         <div class = "special abs">
-            <div style = "margin-bottom: 80pt;">
+            <div style = "margin-bottom: 80/100rem;">
                 <p>HOW CAN</p>
                 <p>WE</p>
-                <p style = "margin-bottom: 100pt;">DISTINGUISH</p>
+                <p style = "margin-bottom: 100/100rem;">DISTINGUISH</p>
                 <p>RUMORS</p>
                 <p>FROM</p>
                 <p>FACTS?</p>
@@ -107,116 +107,116 @@ export default {
     background-color: #000000;
 
     .special{
-        font-size: 255pt;
+        font-size: 255/100rem;
         font-weight: bold;
         color: rgba(175, 17, 29, 0.7);
-        top: 130pt;
-        left: 130pt;
+        top: 130/100rem;
+        left: 130/100rem;
         z-index: 2;
 
         p{
-            line-height: 310pt;
+            line-height: 310/100rem;
             margin-bottom: 0;
         }
     }
 
     .introduction-wrapper{
-        top: 304pt;
-        left: 845pt;
+        top: 304/100rem;
+        left: 845/100rem;
         z-index: 3;
         .content{
             .title{
                 color: rgba(198, 198, 198, 0.8);
-                font-size: 81pt;
-                line-height: 81pt;
-                height: 81pt;
+                font-size: 81/100rem;
+                line-height: 81/100rem;
+                height: 81/100rem;
                 font-weight: bold;
-                margin-bottom: 28pt;
+                margin-bottom: 28/100rem;
             }
 
             .detail{
-                margin-bottom: 28pt;
-                line-height: 32pt;
-                font-size: 27pt;
+                margin-bottom: 28/100rem;
+                line-height: 32/100rem;
+                font-size: 27/100rem;
                 font-weight: bold;
             }
         }
     }
 
     .story-title{
-        top: 1334pt;
-        left: 145pt;
+        top: 1234/100rem;
+        left: 145/100rem;
         color: rgba(198, 198, 198, 0.8);
-        font-size: 81pt;
-        line-height: 81pt;
-        height: 81pt;
+        font-size: 81/100rem;
+        line-height: 81/100rem;
+        height: 81/100rem;
         font-weight: bold;
         z-index: 3;
     }
 
     .story-content{
-        top: 1135pt;
-        left: 412pt;
+        top: 1035/100rem;
+        left: 412/100rem;
         background-image: url(../assets/images/character/character_bg.png);
-        width: 1548pt;
-        height: 900pt;
+        width: 1548/100rem;
+        height: 900/100rem;
         background-size: contain;
         z-index: 1;
     }
 
     .rules-wrapper{
-        top: 2420pt;
-        left: 845pt;
+        top: 2320/100rem;
+        left: 845/100rem;
         z-index: 3;
         .content{
             .title{
                 color: rgba(198, 198, 198, 0.8);
-                font-size: 81pt;
-                line-height: 81pt;
-                height: 81pt;
+                font-size: 81/100rem;
+                line-height: 81/100rem;
+                height: 81/100rem;
                 font-weight: bold;
-                margin-bottom: 25pt;
+                margin-bottom: 25/100rem;
             }
 
             .desc{
                 color: rgba(198, 198, 198, 0.8);
-                font-size: 27pt;
+                font-size: 27/100rem;
                 font-weight: bold;
-                margin-bottom: 32pt;
-                line-height: 32pt;
+                margin-bottom: 32/100rem;
+                line-height: 32/100rem;
 
                 i{
-                    width: 25pt;
-                    height: 25pt;
+                    width: 25/100rem;
+                    height: 25/100rem;
                     background-size: contain;
                     display: inline-block;
                     vertical-align: text-bottom;
-                    margin: 0 10pt;
+                    margin: 0 10/100rem;
                     background-repeat: no-repeat;
                     box-sizing: content-box;
                 }
 
                 .right{
                     background-image: url(../assets/images/videolist/right.png);
-                    padding-bottom: 2pt;
+                    padding-bottom: 2/100rem;
                 }
 
                 .wrong{
                     background-image: url(../assets/images/videolist/wrong.png);
-                    padding-bottom: 2pt;
+                    padding-bottom: 2/100rem;
                 }
 
                 .share{
                     background-image: url(../assets/images/home/share.png);
-                    width: 30pt;
-                    height: 30pt;
+                    width: 30/100rem;
+                    height: 30/100rem;
                     opacity: 0.8;
-                    margin-right: 8pt;
+                    margin-right: 8/100rem;
                 }
 
                 span{
                     text-decoration: underline;
-                    margin-left: 30pt;
+                    margin-left: 30/100rem;
                     cursor: pointer;
                 }
             }
@@ -224,7 +224,7 @@ export default {
     }
 
     .normal{
-        height: 1080pt;
+        height: 1080/100rem;
     }
 }
 </style>

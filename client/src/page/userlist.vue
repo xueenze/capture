@@ -109,17 +109,18 @@ export default {
         background-color: #000000;
 
         .user-list{
-            margin-top: 140pt;
+            margin-top: 140/100rem;
 
             .user-item{
-                margin: 15pt;
-                width: 443pt;
-                height: 280pt;
+                margin: 15/100rem;
+                width: 443/100rem;
+                height: 280/100rem;
                 padding: 0;
                 cursor: pointer;
+                display:inline-block;
 
                 .content{
-                    height: 250pt;
+                    height: 250/100rem;
                     overflow: hidden;
 
                     .user-capture{
@@ -129,44 +130,44 @@ export default {
 
                 .user-name{
                     text-align: center;
-                    margin: 10pt auto;
+                    margin: 10/100rem auto;
                     color: rgba(200, 200, 200, 0.7);
-                    font-size: 18pt;
+                    font-size: 18/100rem;
                 }
             }
         }
 
         .modal{
             background-color: rgba(0, 0, 0, 0.8);
-            top: 100pt;
+            top: 100/100rem;
             .modal-dialog{
-                width: 960pt;
-                margin-top: 100pt;
+                width: 960/100rem;
+                margin-top: 100/100rem;
 
                 .modal-content{
                     background-color: #000000;
-                    box-shadow: 0 1pt 20pt rgba(214, 214, 214, 0.5);
-                    border-radius: 25pt;
+                    box-shadow: 0 1/100rem 20/100rem rgba(214, 214, 214, 0.5);
+                    border-radius: 25/100rem;
 
                     .close-modal{
                         color: rgba(198, 198, 198, 0.5);
-                        top: 22pt;
-                        right: 50pt;
-                        font-size: 18pt;
+                        top: 22/100rem;
+                        right: 50/100rem;
+                        font-size: 18/100rem;
                         font-weight: bold;
                         cursor: pointer;
                     }
 
                     .line{
-                        margin: 50pt auto 0;
-                        height: 4pt;
-                        width: 855pt;
+                        margin: 50/100rem auto 0;
+                        height: 4/100rem;
+                        width: 855/100rem;
                         display: block;
                         background-color: rgba(112, 112, 112, 0.5);
                     }
 
                     img{
-                        margin-top: 15pt;
+                        margin-top: 15/100rem;
                         width: 100%;
                     }
                 }

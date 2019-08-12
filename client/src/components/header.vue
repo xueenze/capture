@@ -103,20 +103,20 @@ export default {
             top: 0;
             left: 0;
             width: 100%;
-            height: 100pt;
+            height: 100/100rem ;
             background-color: #000000;
             z-index: 999;
-            padding-left: 55pt;
+            padding-left: 55/100rem ;
             display: flex;
             flex-direction: row;
             align-items: center;
-            box-shadow: 0pt 4pt 20pt 1pt;
+            box-shadow: 0/100rem  4/100rem  20/100rem  1/100rem ;
 
             .home{
                 background-image: url(../assets/images/header/home.png);
                 background-repeat: no-repeat;
-                width: 790pt;
-                height: 25pt;
+                width: 790/100rem ;
+                height: 25/100rem ;
                 background-size: contain;
                 flex-shrink: 0;
             }
@@ -126,10 +126,10 @@ export default {
 
                 .normal{
                     background-repeat: no-repeat;
-                    width: 85pt;
-                    height: 20pt;
+                    width: 85/100rem ;
+                    height: 20/100rem ;
                     background-size: contain;
-                    margin-right: 195pt;
+                    margin-right: 195/100rem ;
                 }
 
                 .introduction{
@@ -177,15 +177,15 @@ export default {
         .step-wrapper{
             top: 50%;
             transform: translateY(-50%);
-            left: 55pt;
-            width: 20pt;
+            left: 55/100rem ;
+            width: 20/100rem ;
             z-index: 999;
 
             a{
-                width: 20pt;
-                height: 20pt;
-                margin-bottom: 15pt;
-                border-radius: 20pt;
+                width: 20/100rem ;
+                height: 20/100rem ;
+                margin-bottom: 15/100rem ;
+                border-radius: 20/100rem ;
                 background-color: rgba(255, 255, 255, 0.15);
                 display: inline-block;
             }

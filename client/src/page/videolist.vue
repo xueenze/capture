@@ -304,17 +304,17 @@ export default {
           i{
             background-image: url(../assets/images/videolist/loading.png);
             display: block;
-            width: 160pt;
-            height: 160pt;
-            margin: 380pt auto 0;
+            width: 160/100rem;
+            height: 160/100rem;
+            margin: 380/100rem auto 0;
             background-size: cover;
             opacity: 0.5;
           }
         }
 
         .capture-icon{
-          height: 80pt;
-          width: 80pt;
+          height: 80/100rem;
+          width: 80/100rem;
           right: 0;
           top: 50%;
           transform: translateY(-50%);
@@ -322,37 +322,38 @@ export default {
           i{
             display: inline-block;
             background-image: url(../assets/images/home/share.png);
-            width: 40pt;
-            height: 40pt;
+            width: 40/100rem;
+            height: 40/100rem;
             background-size: contain;
-            top: 20pt;
-            left: 20pt;
+            top: 20/100rem;
+            left: 20/100rem;
             opacity: 0.3;
           }
 
           &-mask{
-            width: 80pt;
-            height: 80pt;
+            width: 80/100rem;
+            height: 80/100rem;
             background-color: rgba(255,255,255,0.3);
             z-index: 2;
-            border-top-left-radius: 10pt;
-            border-bottom-left-radius: 10pt;
+            border-top-left-radius: 10/100rem;
+            border-bottom-left-radius: 10/100rem;
             opacity: 0.25;
           }
         }
 
         .video-list{
-            margin-top: 140pt;
+            margin-top: 140/100rem;
             background-color: #000000;
         
         .video-item{
-            margin: 15pt;
-            width: 442.5pt;
+            margin: 15/100rem;
+            width: 442.5/100rem;
             padding: 0;
+            display: inline-block;
 
             .content{
-                height: 250pt;
-                border-radius: 10pt;
+                height: 250/100rem;
+                border-radius: 10/100rem;
                 color: #ffffff;
 
                 .cover{
@@ -363,29 +364,29 @@ export default {
 
                     .cover-default{
                       .media-left{
-                        padding-right: 15pt;
+                        padding-right: 15/100rem;
                         a{
                           display: inline-block;
                           img{
-                              width: 150pt;
-                              height: 150pt;
+                              width: 150/100rem;
+                              height: 150/100rem;
                           }
                         }
                       }
 
                       .media-body{
                         .desc{
-                            top: 19pt;
+                            top: 19/100rem;
                             .title{
-                              font-size: 18pt;
+                              font-size: 18/100rem;
                               color: rgba(136, 136, 136, 0.8);
-                              margin-bottom: 12pt;
+                              margin-bottom: 12/100rem;
                             }
 
                             .detail{
-                              font-size: 21pt;
+                              font-size: 21/100rem;
                               color: rgba(198, 198, 198, 0.8);
-                              line-height: 25pt;
+                              line-height: 25/100rem;
                               word-break: break-all;
                               white-space: nowrap;
                             }
@@ -395,8 +396,8 @@ export default {
                       .content-shadow{
                           background-image: url(../assets/images/videolist/content_shadow.png);
                           width: 100%;
-                          height: 260pt;
-                          background-position: center -45pt;
+                          height: 260/100rem;
+                          background-position: center -45/100rem;
                           background-repeat: no-repeat;
                           background-size: cover;
                           top: 0;
@@ -414,10 +415,10 @@ export default {
 
                   .wrong{
                     background-image: url(../assets/images/videolist/wrong.png);
-                    width: 25pt;
-                    height: 25pt;
+                    width: 25/100rem;
+                    height: 25/100rem;
                     background-size: cover;
-                    left: 35pt;
+                    left: 35/100rem;
                     top: 50%;
                     transform: translateY(-50%);
                     cursor: pointer;
@@ -429,10 +430,10 @@ export default {
 
                   .right{
                     background-image: url(../assets/images/videolist/right.png);
-                    width: 25pt;
-                    height: 25pt;
+                    width: 25/100rem;
+                    height: 25/100rem;
                     background-size: cover;
-                    right: 35pt;
+                    right: 35/100rem;
                     top: 50%;
                     transform: translateY(-50%);
                     cursor: pointer;
@@ -453,8 +454,8 @@ export default {
                   }
 
                   .result{
-                    width: 200pt;
-                    height: 200pt;
+                    width: 200/100rem;
+                    height: 200/100rem;
                     background-size: contain;
                     left: 50%;
                     top: 50%;
